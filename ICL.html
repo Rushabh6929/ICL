@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICL WEB Page</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+
+    body {
+        background-size: contain;
+        background-image: contain;
+       
+        }
+
+
+
+    .navbar {
+        /* border-color: rgb(6, 6, 6);
+        border-width: 1px; */
+        margin-top: 0;
+        justify-content: flex-start;
+        display: flex;
+        height: 20vh;
+        margin-top: 10vh;
+        flex-wrap: wrap;
+
+
+    }
+
+    /*Purna style Dhapleli ahe 8*/
+    .navbar {
+        background: rgba(255, 255, 255, 0.2) !important;
+        /* Give transparent white background to navbar */
+        /* 0.2 to give little whitish effect. */
+        /* Put 0 to get complete transperency */
+        z-index: 2;
+        backdrop-filter: blur(10px) saturate(125%);
+        /* Blur the background */
+        /* 10px Gaussian Blur and saturate for fluent design */
+        -webkit-backdrop-filter: blur(10px) saturate(125%);
+        /* Increases browser compability (safari ios and mac) */
+    }
+
+    .object {
+        display: flex;
+        flex-wrap: initial;
+        /* justify-content: flex-start; */
+        margin-top: 10px;
+        margin-left: 8rem;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
+        /* border-color: black;
+        border-width: 3px;
+        border-style: solid; */
+        max-height: 85px;
+        max-width: 15rem;
+        background-repeat: no-repeat;
+    }
+
+    .left {
+        display: flex;
+        flex-wrap: wrap;
+        /* border: 1px solid red; */
+        height: 5vh;
+        margin-left: 0;
+        margin-top: 14vh;
+        margin-left: -13rem;
+        padding: 6px;
+    }
+
+    .left ul li {
+        display: flex;
+        flex-wrap: wrap;
+        /* border-color: black;
+        border-width: 3px;
+        border-style: solid; */
+        margin-top: 0rem;    
+        margin-left: 0rem;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
+        padding: 0.8rem;
+        line-height: 0vh;
+        max-height: 15px;
+        /* width: 9rem; */
+        display: inline-block;
+        justify-content: initial;
+        align-items: center;
+        height: 15vh;
+    }
+
+    .left  li {
+        list-style: none;
+        /* border-color: black;
+        border-width: 3px;
+        border-style: solid;  */
+      
+    }
+
+    .left li:hover {
+
+        color: black;
+        cursor: pointer;
+        /* font-weight: bolder; */
+        background-color: rgba(253, 253, 253, 0.467);
+        border-radius: 5px;
+        padding-left: 1rem; 
+        padding-right: 1rem;
+        transition: all ease .8s;
+    }
+
+    .right {
+        /* border: 1px solid rgb(113, 0, 128); */
+        height: 2.3vh;
+        margin-left: 20vh;
+        margin-top: -5vh;
+        padding: auto;
+        padding-bottom: 0.8vh;
+    }
+
+    .right li {
+        display: flex;
+        flex-wrap:wrap;
+        /* border-color: black;
+        border-width: 3px;
+        border-style: solid; */
+        margin-top: 20vh;
+        margin-left: 100vh;
+        margin-right: 0rem;
+        margin-bottom: 0rem;
+        padding: 0.8rem;
+        padding-top: 0;
+        line-height: 2vh;
+        display: inline-block;
+        justify-content: space-around;
+        align-items: center;
+        height: 3vh;
+    }
+
+    .right ul li {
+        list-style: none;
+    }
+
+
+    .one {
+        /* display: block;
+        border: 5px;
+        color: black;
+        border: solid; */
+        /* background-color: rgb(18, 18, 208); */
+        width: 60vh;
+        height: 40vh;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40vh;
+        margin-top: 4rem;
+        padding: 30px;
+
+    }
+
+
+    .one {
+        background: rgba(255, 255, 255, 0.2) !important;
+        /* Give transparent white background to navbar */
+        /* 0.2 to give little whitish effect. */
+        /* Put 0 to get complete transperency */
+        z-index: 2;
+        backdrop-filter: blur(10px) saturate(125%);
+        /* Blur the background */
+        /* 10px Gaussian Blur and saturate for fluent design */
+        -webkit-backdrop-filter: blur(10px) saturate(125%);
+        /* Increases browser compability (safari ios and mac) */
+    }
+
+    .footer {
+        background-color: #009ada;
+        align-content: center;
+        justify-content: center;
+        margin-top: 10.5vh;
+        height: 12.5vh;
+        padding-left: 40vh;
+        padding-right: 40vh;
+        padding-top: 2.5vh;
+        padding-bottom: 2vh;
+        background: rgba(9, 136, 226, 0.2) !important;
+        /* Give transparent white background to navbar */
+        /* 0.2 to give little whitish effect. */
+        /* Put 0 to get complete transperency */
+        z-index: 2;
+        backdrop-filter: blur(50px) saturate(125%);
+        /* Blur the background */
+        /* 10px Gaussian Blur and saturate for fluent design */
+        -webkit-backdrop-filter: blur(50px) saturate(125%);
+        /* Increases browser compability (safari ios and mac) */
+
+
+
+    }
+
+    .nine {
+        /* border: 1px;
+border-color: rgb(8, 8, 8);
+border-style: solid; */
+        height: 40vh;
+        width: 40vh;
+        margin-left: 25vh;
+        margin-top: 5vh;
+        background-color: rgb(216, 214, 193);
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+        text-align: left;
+    }
+
+    .nine {
+        text-align: left;
+        font-stretch: expanded;
+        
+
+    }
+</style>
+
+<body background="https://www.iclfood.com/wp-content/uploads/2019/10/image-background-market-beverage-1920x820.jpg"; style="width:100%"; >
+
+    
+     <!-- style="background-repeat:no-repeat ; -->
+
+
+    <div class="navbar">
+        <div class="object">
+            <object> <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/ICL_NEW_LOGO_TRANSPARENT.png" alt="/"
+                    style="width:200px;height:80px" ;>
+            </object>
+        </div>
+
+        <br>
+        <div class="left">
+            <ul>
+                <li> Solutions</li>
+                <li> Markets</li>
+                <li> R&D Capabilities</li>
+                <li> About</li>
+                <li> Contact</li>
+            </ul>
+
+        </div>
+        <br>
+
+        <div class="right">
+            <ul>
+                <li>
+                    <form>
+
+                        <label for="gsearch" ;>Search :</label>
+                        <input type="search" id="gsearch" name="gsearch">
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="nine">
+
+        
+            <h3>BEVERAGE</h3><br>
+        
+        <h1>
+            <p>STABILITY YOU CAN SEE</p>
+        </h1>
+        Texture impacts the visual appearance of a beverage which can influence consumer perception and
+        acceptability. Maximize the power of stabilized proteins to bring smooth and stable beverage products that
+        satisfy the demands of discerning consumers. When proteins are properly stabilized and in solution shaking
+        of the product before use is not necessary.
+    </div>
+    </div>
+
+
+</body>
+
+<div class="footer">
+    <p>Unique processing challenges are common with protein beverages. The higher the level of protein in a beverage,
+        the more difficult it is to stabilize during processing and over its shelf-life. High heat treatments (UHT,
+        Retort) and the low pH parameters needed to produce RTD products can adversely affect the final product texture.
+    </p>
+</div>
+
+</html>
